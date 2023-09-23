@@ -1,0 +1,24 @@
+/*  */
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+}
+h1{
+    font-family: 'Tilt Prism', cursive;
+    text-decoration: none;
+}
+
+header {
+    background-color: rgba(132, 17, 240, 1);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+}
+#im{
+    background-color: aqua;
+}
