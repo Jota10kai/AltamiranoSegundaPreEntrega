@@ -19,6 +19,7 @@ header {
     padding: 10px 0;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 a {
@@ -36,13 +37,55 @@ img{
     max-width: 100%;
 }
 
-/* separando las cards */
+/* tocando el carrousel */
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: relative;
+
+    z-index: -1;
+}
+
+.carousel-item .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-item .container h1 {
+    font-size: 500%;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item .container p {
+    width: 75%;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-carrusel {
+    color: black;
+    font-weight: bold;
+    font-size: 30 p;
+    text-align: center;
+    text-align-last: center;
+}
+
+
+
+
+/* tocando las cards */
 .container-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20;
+    
 }
 
 @media (min-width: 768px) {
@@ -61,11 +104,19 @@ img{
 
 .card {
     max-width: 100%;
-  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+
 }
 
+
 .card-img-top {
+    
     height: 300 px; 
+    object-fit: cover;
 }
 
 /* tocando el footer */
@@ -84,4 +135,94 @@ img{
 
 .bi-tiktok{
     color: black;
+}
+
+
+
+/* tocando el formulario */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(132, 17, 240, 1);
+    color: white;
+    font-weight: bold;
+}
+
+/* tocando el registro */
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20;
+}
+
+.registro input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registro button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(132, 17, 240, 1);
+    color: white;
+    font-weight: bold;
+}
+
+/* tocando el login */  
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(132, 17, 240, 1);
+    color: white;
+    font-weight: bold;
 }

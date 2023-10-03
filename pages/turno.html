@@ -56,6 +56,51 @@
 
     <section>
         <h1>Turno</h1>
+        <!-- formulario en cuadro -->
+
+        <div>
+
+            <form action="../php/turno.php" method="POST" class="formulario">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="apellido" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="apellido" name="apellido" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="telefono" class="form-label">Telefono</label>
+                  <input type="number" class="form-control" id="telefono" name="telefono" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="fecha" class="form-label">Fecha</label>
+                  <input type="date" class="form-control" id="fecha" name="fecha" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="hora" class="form-label">Hora</label>
+                  <input type="time" class="form-control" id="hora" name="hora" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="servicio" class="form-label">Servicio</label>
+                  <select class="form-select" aria-label="Default select example" id="servicio" name="servicio">
+                    <option selected>Selecciona un servicio</option>
+                    <option value="Corte de pelo">Corte de pelo</option>
+                    <option value="Corte de barba">Corte de barba</option>
+                    <option value="Corte de pelo y barba">Corte de pelo y barba</option>
+                    
+                  </select>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+        </div>
+
+        
+
+
         
     </section>
     
